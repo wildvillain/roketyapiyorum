@@ -42,13 +42,13 @@ float Vout(float bias,float gain,float buyukluk){
 int main(){
     //alinan bir deger gir.................. noktanın oldugu noktaua
 //                                         . 
-    struct Dac DAC0510 = {{0,5},5.0/1023.0,1023.0},
-               DAC1014 = {{0,10},10.0/16383.0,16383.0};
+    struct Dac DAC1 = {{0,5},5.0/1023.0,1023.0},
+               DAC2 = {{0,10},10.0/16383.0,16383.0};
     
     
-    DAC0510.alinandeger = DAC0510.bitbasinadeger*DAC0510.bitdegeri;
-    DAC1014.alinandeger = DAC1014.bitbasinadeger*DAC1014.bitdegeri;
-    printf("Alinan aktif voltaj degeri %f :\n",DAC1014.alinandeger);
+    DAC1.alinandeger = DAC1.bitbasinadeger*DAC1.bitdegeri;
+    DAC2.alinandeger = DAC2.bitbasinadeger*DAC2.bitdegeri;
+    printf("Alinan aktif voltaj degeri %f :\n",DAC2.alinandeger);
 
 
 
